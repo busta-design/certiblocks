@@ -26,7 +26,7 @@ export const QRGeneratorForm = (props: { userId: string }) => {
     <div className="min-h-screen flex items-center justify-center p-4">
       <div className="card w-full max-w-lg bg-base-100 shadow-2xl">
         <Link href={`/usuarios/${props.userId}`} className="absolute top-4 left-4 btn btn-sm btn-outline btn-primary">
-          ← Inicio
+          ← Atras
         </Link>
         <div className="card-body items-center text-center">
           {/* Header */}
