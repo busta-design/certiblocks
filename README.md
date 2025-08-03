@@ -190,3 +190,19 @@ Este repositorio contiene tres contratos inteligentes en Solidity para una plata
 
 
 ![alt text](./img/image.png)
+
+
+## Direcciones de los contratos desplegados
+| Contrato                | Dirección (Sepolia)                     |
+|-------------------------|-----------------------------------------|
+| InvestmentPlatform      | 0x14d5B536dE6e0c4D78D697385028062AF4575D2d |
+| ConservativeStrategy    | 0x08eDd01f987bEAF8E3F40EFe7b9851d123872B45 |
+| MockStablecoin          | 0xA62c41355c71428B394bf79243017129bb9792c1 |
+
+
+
+| Contrato                | Dirección (Arbitrum sepolia)                     |
+|-------------------------|-----------------------------------------|
+| InvestmentPlatform      | 0x7B03044c0A61a985831ee6A1D32A3F9E997Cc045 |
+| ConservativeStrategy    | 0xF28fE726e4990162002a3c66eF9A68c6B6bF918a |
+| MockStablecoin          | 0x6d680657d719378cc0f6a8195c4bd7ECEEdfD6C2 |
