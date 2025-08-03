@@ -1,8 +1,12 @@
+import Link from "next/link";
 import { SignIn } from "~~/components/forms/sign-in/SignIn";
 
 const InicioPage = () => {
   return (
     <div className="flex w-full justify-center items-center p-4">
+      <Link href="/" className="absolute top-4 left-4 btn btn-sm btn-outline btn-primary">
+        ← Inicio
+      </Link>
       <section className="border rounded-lg p-6 max-w-md w-full text-center bg-base-100">
         <h2 className="text-2xl font-bold mb-2 text-primary">Sueltitos</h2>
         <h3 className="text-lg mb-6 text-secondary">Tus sueltitos de ahora son tu fortuna del mañana</h3>

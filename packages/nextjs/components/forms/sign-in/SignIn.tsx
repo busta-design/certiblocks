@@ -12,7 +12,7 @@ export const SignIn = () => {
 
   const onSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    router.push("/usuarios");
+    router.push("/usuarios/961fdf6a-0d50-470a-a580-7b15108f7f08");
   };
 
   const disabled = !email || password.length < 5;
