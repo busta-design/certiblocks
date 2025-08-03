@@ -25,9 +25,9 @@ const Home: NextPage = () => {
               complicaciones, sin conocimientos técnicos.
             </p>
             <div className="flex flex-col lg:flex-row gap-4 justify-center items-center animate-fade-in-up animation-delay-400">
-              <button className="btn btn-accent btn-lg px-8 hover:scale-105 transition-transform">
+              <Link href="/auth/inicio" className="btn btn-accent btn-lg px-8 hover:scale-105 transition-transform">
                 🚀 Empezar ahora
-              </button>
+              </Link>
               <a
                 href="#como-funciona"
                 className="btn btn-outline btn-lg px-8 text-white border-white hover:bg-white hover:text-primary"
@@ -175,9 +175,9 @@ const Home: NextPage = () => {
             </p>
 
             <div className="flex flex-col lg:flex-row gap-4 justify-center items-center">
-              <button className="btn btn-accent btn-lg px-8 hover:scale-105 transition-transform">
+              <Link className="btn btn-accent btn-lg px-8 hover:scale-105 transition-transform" href="/auth/inicio">
                 ✨ Crear mi cuenta gratis
-              </button>
+              </Link>
               <a
                 href="#contacto"
                 className="btn btn-outline btn-lg px-8 text-white border-white hover:bg-white hover:text-primary"
@@ -288,12 +288,7 @@ type HeaderMenuLink = {
   icon?: React.ReactNode;
 };
 
-const menuLinks: HeaderMenuLink[] = [
-  {
-    label: "Inicio",
-    href: "/",
-  },
-];
+const menuLinks: HeaderMenuLink[] = [];
 
 const HeaderMenuLinks = () => {
   const pathname = usePathname();
@@ -348,12 +343,17 @@ const Header = () => {
             <Image alt="SE2 logo" className="cursor-pointer" fill src="/logo.svg" />
           </div>
           <div className="flex flex-col">
-            <span className="font-bold leading-tight">CertiBocks</span>
+            <span className="font-bold leading-tight">Sueltitos</span>
           </div>
         </Link>
         <ul className="hidden lg:flex lg:flex-nowrap menu menu-horizontal px-1 gap-2">
           <HeaderMenuLinks />
         </ul>
+      </div>
+      <div className="navbar-end grow mr-4">
+        <Link className="btn btn-primary" href="/auth/inicio">
+          Iniciar
+        </Link>
       </div>
     </div>
   );
