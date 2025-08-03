@@ -51,6 +51,7 @@ export const SignUp = () => {
   };
 
   const handleSelfieFileSelect = (e: ChangeEvent<HTMLInputElement>) => {
+    e.preventDefault();
     const file = e.target.files?.[0];
     if (!file) return;
     if (!validFileTypes.includes(file.type)) return;
@@ -58,6 +59,7 @@ export const SignUp = () => {
     setSelfie(file);
   };
   const handleCiImageFileSelect = (e: ChangeEvent<HTMLInputElement>) => {
+    e.preventDefault();
     const file = e.target.files?.[0];
     if (!file) return;
     if (!validFileTypes.includes(file.type)) return;
@@ -149,6 +151,7 @@ export const SignUp = () => {
           />
           {!selfie ? (
             <button
+              type="button"
               onClick={() => selfieInputRef.current?.click()}
               className="w-full h-40 border-2 border-dashed border-gray-300 rounded-lg 
                      hover:border-blue-400 hover:bg-blue-50 transition-all duration-200
@@ -182,6 +185,7 @@ export const SignUp = () => {
                   onClick={() => setSelfie(null)}
                   className="p-1 hover:bg-red-100 rounded-full transition-colors"
                   title="Eliminar archivo"
+                  type="button"
                 >
                   <span className="text-red-500">X</span>
                 </button>
@@ -213,6 +217,7 @@ export const SignUp = () => {
           />
           {!ciImage ? (
             <button
+              type="button"
               onClick={() => ciImageInputRef.current?.click()}
               className="w-full h-40 border-2 border-dashed border-gray-300 rounded-lg 
                      hover:border-blue-400 hover:bg-blue-50 transition-all duration-200
@@ -243,6 +248,7 @@ export const SignUp = () => {
                 </div>
 
                 <button
+                  type="button"
                   onClick={() => setCiImage(null)}
                   className="p-1 hover:bg-red-100 rounded-full transition-colors"
                   title="Eliminar archivo"
