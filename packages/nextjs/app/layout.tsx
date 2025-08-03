@@ -4,9 +4,9 @@ import "~~/styles/globals.css";
 import { getMetadata } from "~~/utils/scaffold-eth/getMetadata";
 
 export const metadata = getMetadata({
-  title: "Sueltito",
+  title: "Sueltitos",
   description:
-    "Sueltito es una plataforma que te permite invertir en crypto activos para tu fondo de jubilacion sin necesidad de saber sobre crypto",
+    "Sueltitos es una plataforma que te permite invertir en crypto activos para tu fondo de jubilacion sin necesidad de saber sobre crypto",
 });
 
 const ScaffoldEthApp = ({ children }: { children: React.ReactNode }) => {
